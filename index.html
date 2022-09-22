@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no maximum-scale=1">
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+      <title>Travelopia - Build your dreams</title>
+      <link rel="canonical" href="https://www.travelopia.com/">
+      <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+      <meta property="og:locale" content="en_US">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Travelopia - Build your dreams">
+      <meta property="og:url" content="https://www.travelopia.com/">
+      <meta property="og:site_name" content="Travelopia">
+      <meta property="article:modified_time" content="2022-02-25T17:02:42+00:00">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="https://res.cloudinary.com/enchanting/q_70,f_auto,c_fill,g_face/travelopia-web/2021/08/Iceland.jpg">
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <div class="logo"><a href="/">Travelworld</a></div>
+            <div class="menu"><a href="#">Contact</a></div>
+         </div>
+      </header>
+      <main class="heroBanner" id="hero">
+         <picture>
+            <source class="banner" srcset="./images/travel.jpg" media="(min-width: 600px)">
+            <img alt="Trevel" class="banner" src="./images/mob_travel.jpg" alt="MDN">
+         </picture>
+         <div class="overlay">
+            <h1>EXPERIENTIAL TRAVEL BRANDS</h1>
+            <button id="alert">Click Here</button>
+         </div>
+      </main>
+      <footer>
+         <div class="container">
+            <center>© Travelworld 2022</center>
+         </div>
+      </footer>
+      <div id="popupwrap" class="popup-overlay">
+        <div class="popup">
+            <h2>Hello, World.</h2>
+            <a class="close" id="close" href="#">&times;</a>
+            <div class="content">
+                I'm a popup box.
+            </div>
+        </div>
+    </div>  
+    <script>
+        //Alert Box
+        const btn = document.getElementById("alert")
+        const close = document.getElementById("close")
+        const popupwrap = document.getElementById("popupwrap")
+        btn.addEventListener("click", function(){
+            popupwrap.className += " "+"active"
+        })
+        //Close popup
+        close.addEventListener("click", function(){
+            popupwrap.className = "popup-overlay"
+        })
+    </script>
+   </body>
+</html>
